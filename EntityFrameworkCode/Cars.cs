@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace LechuRestSharp.EntityFrameworkCode
 {
     [Table("Cars")]
-    internal class Cars
+    public class Cars
     {
         [Key]
         public int Id { get; set; }

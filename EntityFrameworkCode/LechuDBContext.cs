@@ -23,6 +23,6 @@ namespace LechuRestSharp.EntityFrameworkCode
             }
         }
 
-        public DbSet<Author> Cities { get; set; }
+        public DbSet<Cars> Cities { get; set; }
     }
 }

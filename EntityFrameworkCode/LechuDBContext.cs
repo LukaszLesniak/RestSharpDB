@@ -19,7 +19,7 @@ namespace LechuRestSharp.EntityFrameworkCode
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=123qwe;");
+                optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=1234;");
             }
         }
 

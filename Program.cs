@@ -7,31 +7,30 @@ namespace LechuRestSharp
     {
         public void Run1()
         {
-            Console.WriteLine("start");
 
             DbContextOptions<LechuDBContext> options = new DbContextOptions<LechuDBContext>();
             using (var ctx = new LechuDBContext(options))
             {
-                var cities = new Author()
-                {
-                    Id = 3,
-                    AuthorName = "a",
-                    FirstName = "b",
-                    LastName = "c",
-                };
-                try 
-                {
-                    //var lol =  ctx.Cities.FirstAsync();
-                    //Console.WriteLine(lol.Result);
-                     ctx.Cities.Add(cities);
+                //var cities = new Author()
+                //{
+                //    Id = 3,
+                //    AuthorName = "a",
+                //    FirstName = "b",
+                //    LastName = "c",
+                //};
+                //try
+                //{
+                //    var lol = ctx.Cities.FirstAsync();
+                //    Console.WriteLine(lol.Result);
+                //    ctx.Cities.Add(cities);
 
-                     ctx.SaveChanges();
-                }
-                catch (AggregateException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                Console.WriteLine("end");
+                //    ctx.SaveChanges();
+                //}
+                //catch (AggregateException e)
+                //{
+                //    Console.WriteLine(e.Message);
+                //}
+                //Console.WriteLine("end");
 
 
             }
